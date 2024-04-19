@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --font-family: "Libre Baskerville", serif;
+    --bg-color: #201658;
+    --primary-color: #F9E8C9;
+}
+
+body {
+    display: flex;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 16px
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+}
+
+.mensagem {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+span#box {
+    border: 1px solid var(--primary-color);
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 4rem;
+}
+
+.microfone, .fa-microphone {
+    font-size: 2rem;
+    animation: zoom 1s ease-in-out infinite alternate;
+}
+
+@keyframes zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.5);
+    }
+}
+
+.btn-jogar {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-jogar:hover {
+    scale: 1.2;
+    font-weight: 600;
+}
